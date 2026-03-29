@@ -1,28 +1,28 @@
 class SloppyJoe < Formula
-  desc "Shields against supply-chain, slopsquatting, and typosquatting attacks"
+  desc "Detect hallucinated, typosquatted, and non-canonical dependencies"
   homepage "https://github.com/brennhill/sloppy-joe"
   version "0.10.0"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/brennhill/sloppy-joe/releases/download/v0.10.0/sloppy-joe-aarch64-apple-darwin.tar.xz"
-      sha256 "e63b6431f513797567e39c92a9afd99299bc284c83ed9d7069b38b53f259fa20"
+      sha256 "675ea14148a3029738b433d7e9815f7231f2c8635ba5c98d6e9bee61ee36888d"
     end
     on_intel do
       url "https://github.com/brennhill/sloppy-joe/releases/download/v0.10.0/sloppy-joe-x86_64-apple-darwin.tar.xz"
-      sha256 "392f4b28f231e0ec99406d95ca29dd80ad87c6bf560db0322addf85fe7585446"
+      sha256 "758d93fbbba86f1cc0fae57da283450e6af3b8323f4212793fcf6cfd5745dc08"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/brennhill/sloppy-joe/releases/download/v0.10.0/sloppy-joe-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "1dbc52372ccc5c06cd0520908150774d512517365623c73aac088f2caf6e592c"
+      sha256 "80b2b3c1a6d0af0faf3fd1631e70594c1099b03e48dc8b3bb320b7ae68371aca"
     end
     on_intel do
       url "https://github.com/brennhill/sloppy-joe/releases/download/v0.10.0/sloppy-joe-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "efc05860fe2aedbbdec3da4855e4fd78fdc45c862e183a3d1aa6c56fb455997b"
+      sha256 "09cb7b5ef41fa365a3a1a0e8a975a7abe24371a3aba210f37962f4f5cb8df6dd"
     end
   end
 
