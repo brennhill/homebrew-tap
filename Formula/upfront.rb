@@ -11,7 +11,7 @@ class Upfront < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.4/upfront_0.3.4_darwin_amd64.tar.gz"
-      sha256 "00a37bdf462647793fb40c808cfc21b071404fc411c8c9a7921dbad519a7f17c"
+      sha256 "ffd216f770ef28293f5d06e404a1ed65563f33412bcad0b8afeed54e4f3bc87c"
 
       define_method(:install) do
         bin.install "upfront"
@@ -19,7 +19,7 @@ class Upfront < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.4/upfront_0.3.4_darwin_arm64.tar.gz"
-      sha256 "c17a70edac7147953cf3dc272f81eede21e882665365b5d4d7d27f3817b7036f"
+      sha256 "468fb4e4e465fc32ebd0a00c2d38fe71dc7407fd714c3eae1124d8ede651a38b"
 
       define_method(:install) do
         bin.install "upfront"
@@ -30,14 +30,14 @@ class Upfront < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.4/upfront_0.3.4_linux_amd64.tar.gz"
-      sha256 "65a17f806b4d0c204b3d8083c93641fe0e7f6d4f3e0361cc2f4b62348a312a7d"
+      sha256 "51b55f9fed7ef5fc1adde216c74cc8573a7febda50206f5405b210d6562027dd"
       define_method(:install) do
         bin.install "upfront"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.4/upfront_0.3.4_linux_arm64.tar.gz"
-      sha256 "58ea7cabd43a77e9a4efe1270890d97cd965ed609c46c28a0b122cffb445fbb7"
+      sha256 "ca83484d06c219b929572bae4c0da6da9bdb4cb41be776a7d5c3407a3574d7c5"
       define_method(:install) do
         bin.install "upfront"
       end
