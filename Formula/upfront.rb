@@ -5,21 +5,21 @@
 class Upfront < Formula
   desc "Force thinking before code — audit trail for AI-assisted feature definition"
   homepage "https://thinkupfront.dev"
-  version "0.3.2"
+  version "0.3.3"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.2/upfront_0.3.2_darwin_amd64.tar.gz"
-      sha256 "eee6b0788213adc0373235e7160a9fc693a300d168375db9530a87ac7dbfbcd1"
+      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.3/upfront_0.3.3_darwin_amd64.tar.gz"
+      sha256 "37eeef4656f6d307490844dc2bd121ce4522a3d254d47767ddeef791c31dcaca"
 
       define_method(:install) do
         bin.install "upfront"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.2/upfront_0.3.2_darwin_arm64.tar.gz"
-      sha256 "77c0e9859c0b6d457de288b2abbf3d6c0937f2e2482d420a48a507fdfdd93965"
+      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.3/upfront_0.3.3_darwin_arm64.tar.gz"
+      sha256 "e3ef05c75654c10703ba59f34faa7cd6de6cb0d8ffed460939855acf99d97696"
 
       define_method(:install) do
         bin.install "upfront"
@@ -29,15 +29,15 @@ class Upfront < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.2/upfront_0.3.2_linux_amd64.tar.gz"
-      sha256 "491ee3da325b3e145cac06845626bc7db8d7beae60367ad1e3d6fdd971b64e45"
+      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.3/upfront_0.3.3_linux_amd64.tar.gz"
+      sha256 "2c701ec6555cc4bef5f10ef75570980e7507193b442ee4dfb9454ed9cf48fb3c"
       define_method(:install) do
         bin.install "upfront"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.2/upfront_0.3.2_linux_arm64.tar.gz"
-      sha256 "4c15d4b814ec0d15a142f3f8c94738ce8f4991bc3e4808e40054af3368f26586"
+      url "https://github.com/ThinkUpfront/Upfront/releases/download/v0.3.3/upfront_0.3.3_linux_arm64.tar.gz"
+      sha256 "cc18ca74b84575d9beeafd2e3a5fb4e39742e7a25672f52a60db9dd6e9052d32"
       define_method(:install) do
         bin.install "upfront"
       end
